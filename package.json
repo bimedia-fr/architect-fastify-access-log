@@ -1,0 +1,29 @@
+{
+  "name": "architect-fastify-access-log",
+  "version": "0.0.0",
+  "description": "provide access logs to architect fastify application using fastify hooks",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bimedia-fr/architect-fastify-access-log.git"
+  },
+  "keywords": [
+    "architect",
+    "access",
+    "log",
+    "rest",
+    "fastify"
+  ],
+  "author": "sébastien hus",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bimedia-fr/architect-fastify-access-log/issues"
+  },
+  "homepage": "https://github.com/bimedia-fr/architect-fastify-access-log#readme",
+  "dependencies": {
+    "strftime": "~0.10.3"
+  }
+}
