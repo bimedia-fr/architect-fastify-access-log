@@ -1,6 +1,6 @@
 {
   "name": "architect-fastify-access-log",
-  "version": "0.0.0",
+  "version": "1.0.0-0",
   "description": "provide access logs to architect fastify application using fastify hooks",
   "main": "lib/index.js",
   "scripts": {
