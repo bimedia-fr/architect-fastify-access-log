@@ -4,7 +4,10 @@
   "description": "provide access logs to architect fastify application using fastify hooks",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint lib",
+    "pre-commit": "npm lint",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,14 @@
     "url": "https://github.com/bimedia-fr/architect-fastify-access-log/issues"
   },
   "homepage": "https://github.com/bimedia-fr/architect-fastify-access-log#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "strftime": "~0.10.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "eslint-plugin-n": "^17.11.1"
   }
 }
