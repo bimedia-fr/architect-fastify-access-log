@@ -4,7 +4,7 @@
   "description": "provide access logs to architect fastify application using fastify hooks",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nyc --reporter=lcov --reporter=text mocha --recursive test",
     "lint": "eslint lib",
     "preversion": "npm run lint",
     "postversion": "git push --follow-tags"
@@ -34,6 +34,8 @@
   },
   "devDependencies": {
     "eslint": "^9.12.0",
-    "eslint-plugin-n": "^17.11.1"
+    "eslint-plugin-n": "^17.11.1",
+    "mocha": "^11.1.0",
+    "nyc": "^17.1.0"
   }
 }
